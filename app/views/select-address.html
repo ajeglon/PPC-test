@@ -1,0 +1,74 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+What is your address?
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <form action="do-you-know-your-nhs-number" method="post">
+        <div class="nhsuk-form-group">
+            <p class="nhsuk-body-l">Buy an NHS Prescription Prepayment Certificate</p>
+            <h1 class="nhsuk-heading-xl">Select your address</h1>
+            <div class="nhsuk-form-group">
+                <fieldset class="nhsuk-fieldset">
+                  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                    <h1 class="nhsuk-fieldset__heading">
+                    5 addresses found for NE15 8NY
+                    </h1>
+                  </legend>
+              
+                  <div class="nhsuk-radios">
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="address-1" name="address-1" type="radio" value="yes">
+                      <label class="nhsuk-label nhsuk-radios__label" for="address-1">
+                        STELLA HOUSE, NEWCASTLE UPON TYNE, NE15 8NY
+                      </label>
+                    </div>
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="address-2" name="address-2" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="address-2">
+                        NHS AMBULANCE SERVICE, NEWCASTLE UPON TYNE, NE15 8NY
+                      </label>
+                    </div>
+              
+                    <div class="nhsuk-radios__item">
+                        <input class="nhsuk-radios__input" id="address-3" name="address-3" type="radio" value="no">
+                        <label class="nhsuk-label nhsuk-radios__label" for="address-3">
+                        UNIT 1, NEWCASTLE UPON TYNE, NE15 8NY
+                        </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                        <input class="nhsuk-radios__input" id="address-4" name="address-4" type="radio" value="no">
+                        <label class="nhsuk-label nhsuk-radios__label" for="address-4">
+                        UNIT 2, NEWCASTLE UPON TYNE, NE15 8NY
+                        </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                        <input class="nhsuk-radios__input" id="address-5" name="address-5" type="radio" value="no">
+                        <label class="nhsuk-label nhsuk-radios__label" for="address-5">
+                        UNIT 2, NEWCASTLE UPON TYNE, NE15 8NY
+                        </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="nhsuk-input--width-4"></div> 
+            <a href="manual-address"><p>My address is not listed</p></a>
+            <button class="nhsuk-button" type="submit">
+                Next
+              </button>
+        </div>
+    </form>
+    <a href="index"><p>Cancel</p></a>
+   </div>
+</div>
+{% endblock %}

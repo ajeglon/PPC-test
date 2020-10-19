@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Prepay your NHS prescriptions
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <form action="check-direct-debit-details" method="post">
+        <div class="nhsuk-form-group">
+            <fieldset class="nhsuk-fieldset">
+                <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                  <h1 class="nhsuk-fieldset__heading">
+                    Enter bank details
+                  </h1>
+                </legend>
+              
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="account-number">
+                    Account number
+                  </label>
+                  <input class="nhsuk-input nhsuk-u-width-two-thirds" id="account-number" name="account-number" type="text">
+                </div>
+              
+              
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="sort-code">
+                    Sort code
+                  </label>
+                  <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="sort-code" name="sort-code" type="text">
+                  <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="sort-code" name="sort-code" type="text">
+                  <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="sort-code" name="sort-code" type="text">
+                </div>
+              
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="account-name">
+                    Account name
+                  </label>
+                  <input class="nhsuk-input nhsuk-u-width-two-thirds" id="account-name" name="account-name" type="text">
+                </div>
+              </fieldset>
+              <div class="nhsuk-u-padding-bottom-4"></div>
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    View the Direct Debit Guarantee
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                    <p>The Guarantee is offered by all banks and building societies that accept instructions to pay Direct Debits.</p>
+                    <p>If there are any changes to the amount, date or frequency of your Direct Debit the NHS Business Services Authority will notify you (normally 10 working days) in advance of your account being debited or as otherwise agreed. If you request the NHS Business Services Authority to collect a payment, confirmation of the amount and date will be given to you at the time of the request.</p>
+                    <p>If an error is made in the payment of your Direct Debit, by the NHS Business Services Authority or your bank or building society, you are entitled to a full and immediate refund of the amount paid from your bank or building society.</p>
+                    <p>f you receive a refund you are not entitled to, you must pay it back when the NHS Business Services Authority asks you to.</p>
+                    <p>You can cancel a Direct Debit at any time by simply contacting your bank or building society. Written confirmation may be required. Please also notify the NHS Business Services Authority.</p>
+                </div>
+              </details>
+
+            <button class="nhsuk-button" type="submit">
+                Next
+              </button>
+        </div>
+    </form>
+    <a href="index"><p>Cancel</p></a>
+    </div>
+    </div>
+    {% endblock %}

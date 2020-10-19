@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+What is your address?
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <form action="select-address" method="post">
+        <div class="nhsuk-form-group">
+            <p class="nhsuk-body-l">Buy an NHS Prescription Prepayment Certificate</p>
+            <h1 class="nhsuk-heading-xl">Find your address</h1>
+            <p>The address you give should match what is printed on your prescriptions.</p>
+            <fieldset class="nhsuk-fieldset">
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="address-postcode">
+                    Postcode
+                  </label>
+                  <input class="nhsuk-input nhsuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+                </div>
+                <div class="nhsuk-input--width-4"></div> 
+              </fieldset>
+              <a href="manual-address"><p>Enter my address manually</p></a>
+            <button class="nhsuk-button" type="submit">
+                Next
+              </button>
+        </div>
+    </form>
+    <a href="index"><p>Cancel</p></a>
+   </div>
+</div>
+{% endblock %}

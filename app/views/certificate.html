@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+How long do you want your prepayment certificate to last?
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <form action="certificate-how-to-pay-for" method="post">
+        <div class="nhsuk-form-group">
+            <p class="nhsuk-body-l">Buy an NHS Prescription Prepayment Certificate</p>
+            <h1 class="nhsuk-heading-xl">How long do you want your prepayment certificate to last?</h1>
+            <p>You can prepay for prescriptions for 3 or 12 months. A prescription prepayment certificate costs:</p>
+            <ul class="nhsuk-list nhsuk-list--bullet">
+                <li><span class="nhsuk-u-font-weight-bold">£29.10</span> for 3 months</li>
+                <li><span class="nhsuk-u-font-weight-bold">£104</span> for 12 months
+                    <br>
+                    (or 10 monthly installments of <span class="nhsuk-u-font-weight-bold">£10.40</span> by direct debit)
+                </li>
+              </ul>
+              <div class="nhsuk-form-group">
+
+                <fieldset class="nhsuk-fieldset">            
+                  <div class="nhsuk-radios">            
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="3-months" name="example" type="radio" value="yes">
+                      <label class="nhsuk-label nhsuk-radios__label" for="3-months">
+                        3 months
+                      </label>
+                    </div>
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="12-months" name="example" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="12-months">
+                        12 months
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="nhsuk-input--width-4"></div>  
+                <button class="nhsuk-button" type="submit">
+                Next
+              </button>
+        </div>
+    </form>
+    <a href="index"><p>Cancel</p></a>
+   </div>
+</div>
+{% endblock %}

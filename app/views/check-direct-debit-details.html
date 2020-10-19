@@ -1,0 +1,162 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Prepay your NHS prescriptions
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <form action="confirm-and-submit" method="post">
+        <div class="nhsuk-form-group">
+            <p class="nhsuk-body-l">Prepay for NHS prescriptions</p>
+            <h1 class="nhsuk-heading-xl">Check your direct debit details</h1>
+            <h2 class="nhsuk-heading-l">Your payments</h2>
+
+            <dl class="nhsuk-summary-list">
+
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Number of payments
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    10
+                  </dd>
+              
+                </div>
+              
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Payment amount
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    £10.40
+                  </dd>
+              
+                </div>
+              
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    First payment
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    12/09/2018
+                  </dd>
+              
+                </div>
+              
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Last payment
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    12/08/2019
+                  </dd>
+              
+                </div>
+              
+              </dl>
+
+              <h2 class="nhsuk-heading-l">Your account details</h2>
+              <dl class="nhsuk-summary-list">
+
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Account holder's name
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    TEST TEST
+                  </dd>
+              
+                  <dd class="nhsuk-summary-list__actions">
+              
+                    <a href="what-is-your-name#first-name">
+                      Change<span class="nhsuk-u-visually-hidden"> name</span>
+                    </a>
+              
+                  </dd>
+              
+                </div>
+              
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Account holder's address
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    <p>STELLA HOUSE</p>
+                    <p>NEWCASTLE UPON TYNE</p>
+                    <p>NE15 8NY</p>
+                  </dd>
+              
+                  <dd class="nhsuk-summary-list__actions">
+              
+                    <a href="manual-address">
+                      Change<span class="nhsuk-u-visually-hidden"> date of birth</span>
+                    </a>
+              
+                  </dd>
+              
+                </div>
+              
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Account number
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    
+                  </dd>
+              
+                  <dd class="nhsuk-summary-list__actions">
+              
+                    <a href="enter-bank-details#account-name">
+                      Change<span class="nhsuk-u-visually-hidden"> contact information</span>
+                    </a>
+              
+                  </dd>
+              
+                </div>
+              
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Sort code
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                   
+                    
+                  </dd>
+              
+                  <dd class="nhsuk-summary-list__actions">
+              
+                    <a href="enter-bank-details#sort-code">
+                      Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+                    </a>
+              
+                  </dd>
+              
+                </div>
+              
+              </dl>
+
+              <p>We will send this Direct Debit instruction to: </p>
+              <p class="nhsuk-u-font-weight-bold">Your Bank, Their St. Theirtown</p>
+              <p>Please pay the NHS Business Services Authority Direct Debits from the account detailed in this instruction subject to the safeguards assured by the Direct Debit Guarantee. 
+                  I understand that this instruction may remain with the Prescription prepayment Issue Office of the NHS Business Services Authority, and if so, 
+                  details will be passed electronically to my Bank/Building Society.</p>
+                  <p>Originator: <br> NHS Business Services Authority, PPC, Bridge House,
+                    152 Pilgrim Street, Newcastle upon Tyne, NE1 6SN</p>
+                    <p>Service User Number (SUN): 242785E</p>
+                    <p>Telephone: 0191 232 5371</p>
+
+
+            <button class="nhsuk-button" type="submit">
+                Next
+              </button>
+        </div>
+    </form>
+    <a href="index"><p>Cancel</p></a>
+    </div>
+    </div>
+    {% endblock %}
