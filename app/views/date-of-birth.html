@@ -11,15 +11,16 @@ What is your date of birth?
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <form action="what-is-your-name" method="post">
-        <div class="nhsuk-form-group">
+        <div class="nhsuk-form-group"><!-- you can get rid of this, you don't need a form group within a form group -->
             <h1 class="nhsuk-heading-xl">What is your date of birth?</h1>
-            <div class="nhsuk-form-group">
+            <div class="nhsuk-form-group"><!-- I'd get rid of this one too, you're ok with just having the 'nhsuk-form-group' wrapped around inputs like you have below -->
                 <fieldset class="nhsuk-fieldset" aria-describedby="hint" role="group">
                   <legend class="nhsuk-fieldset__legend nhsuk-label--m">
                     <h2 class="nhsuk-fieldset__heading">
                     We collect this information to check if you qualify for free prescriptions.
-                    </h2>
+                    </h2><!-- this should be where the h1 is -->
                   </legend>
+                  <!-- I'd put the 'We collect this info...' text as a <p> here -->
                   <span class="nhsuk-hint" id="hint">
                     For example, 15 03 1984
                   </span>
@@ -57,6 +58,10 @@ What is your date of birth?
         </div>
      </form>
      <a href="index"><p>Cancel</p></a>
+     <!-- A couple of things with this. I'd put the <p> tag on the outside of the <a> tag, that's more standard. <p><a></a></p>
+    
+      I'd also move this link directly underneath the button. You can see at the moment the space between the cancel and next button is quite big. You want about half that space. 
+      -->
     </div>
 </div>
 {% endblock %}

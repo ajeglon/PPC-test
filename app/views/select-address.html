@@ -11,17 +11,18 @@ What is your address?
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <form action="do-you-know-your-nhs-number" method="post">
-        <div class="nhsuk-form-group">
+        <div class="nhsuk-form-group"><!-- Can get rid of this -->
             <h1 class="nhsuk-heading-xl">Select your address</h1>
             <div class="nhsuk-form-group">
                 <fieldset class="nhsuk-fieldset">
                   <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-                    <h1 class="nhsuk-fieldset__heading">
+                    <h1 class="nhsuk-fieldset__heading"><!-- Sometimes you can have multiple h1s, but usually you'd just have 1. You could change this to a h2 -->
                     5 addresses found for NE15 8NY
                     </h1>
                   </legend>
                   <div class="nhsuk-radios">              
                     <div class="nhsuk-radios__item">
+                      <!-- If you look in the browser, you can select every radio button, but you only want to be able to select one. You can fix this by giving all the radios the same name attribute name="address" or something. Keep the different IDs tho. -->
                       <input class="nhsuk-radios__input" id="address-1" name="address-1" type="radio" value="yes">
                       <label class="nhsuk-label nhsuk-radios__label" for="address-1">
                         STELLA HOUSE, NEWCASTLE UPON TYNE, NE15 8NY
@@ -54,14 +55,14 @@ What is your address?
                   </div>
                 </fieldset>
               </div>
-              <div class="nhsuk-input--width-4"></div> 
-            <a href="manual-address"><p>My address is not listed</p></a>
+              <div class="nhsuk-input--width-4"></div> <!-- Remove this -->
+            <a href="manual-address"><p>My address is not listed</p></a> <!-- <p><a></a></p>-->
             <button class="nhsuk-button" type="submit">
                 Next
             </button>
         </div>
     </form>
-    <a href="index"><p>Cancel</p></a>
+    <a href="index"><p>Cancel</p></a><!-- Same as other pages -->
    </div>
 </div>
 {% endblock %}

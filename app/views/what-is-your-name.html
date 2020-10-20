@@ -11,31 +11,31 @@ What is your date of birth?
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <form action="find-your-address" method="post">
-        <div class="nhsuk-form-group">
-            <h1 class="nhsuk-heading-xl">What is your name?</h1>
-            <p>Your first name and last name should match what is printed on your prescriptions. Do not include any middle names.</p>
-            <fieldset class="nhsuk-fieldset"> 
-              <legend class="nhsuk-u-visually-hidden">What is your name?</legend>
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="first-name">
-                        First name
-                    </label>
-                    <input class="nhsuk-input nhsuk-u-width-two-thirds" id="first-name" name="first-name" type="text">
-                    </div>
-                    <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="second-name">
-                        Last name
-                    </label>
-                    <input class="nhsuk-input nhsuk-u-width-two-thirds " id="second-name" name="second-name" type="text">
-                </div>
-                <div class="nhsuk-input--width-4"></div> 
-            </fieldset>  
-              <button class="nhsuk-button" type="submit">
-                Next
-              </button>
+        <div class="nhsuk-form-group"><!-- if you get rid of this it'll sort your space between the button and the inputs -->
+          <h1 class="nhsuk-heading-xl">What is your name?</h1>
+          <p>Your first name and last name should match what is printed on your prescriptions. Do not include any middle names.</p>
+          <fieldset class="nhsuk-fieldset"> 
+            <legend class="nhsuk-u-visually-hidden">What is your name?</legend><!-- I think you can use the H1 as the legend here. You're heirarchy would be form > fieldset > legend > h1 > p > div.nhsuk-form-group > label > input Does that make sense? -->
+            <div class="nhsuk-form-group">
+              <label class="nhsuk-label" for="first-name">
+                First name
+              </label>
+              <input class="nhsuk-input nhsuk-u-width-two-thirds" id="first-name" name="first-name" type="text">
+            </div>
+            <div class="nhsuk-form-group">
+              <label class="nhsuk-label" for="second-name">
+                Last name
+              </label>
+              <input class="nhsuk-input nhsuk-u-width-two-thirds " id="second-name" name="second-name" type="text">
+            </div>
+            <!-- <div class="nhsuk-input--width-4"></div> Don't use empty divs for spacing. You can get rid of this -->
+          </fieldset>  
+          <button class="nhsuk-button" type="submit">
+            Next
+          </button>
         </div>
     </form>
-    <a href="index"><p>Cancel</p></a>
+    <a href="index"><p>Cancel</p></a><!-- Same as the previous page, <p><a></a></p> and move under the button -->
    </div>
 </div>
 {% endblock %}
