@@ -10,44 +10,40 @@ How long do you want your prepayment certificate to last?
 {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
-      <form action="certificate-how-to-pay-for" method="post">
-        <div class="nhsuk-form-group">
-            <h1 class="nhsuk-heading-xl">How long do you want your prepayment certificate to last?</h1>
-            <p>You can prepay for prescriptions for 3 or 12 months. A prescription prepayment certificate costs:</p>
-            <ul class="nhsuk-list nhsuk-list--bullet">
-                <li><span class="nhsuk-u-font-weight-bold">£29.10</span> for 3 months</li>
-                <li><span class="nhsuk-u-font-weight-bold">£104</span> for 12 months
-                    <br>
-                    (or 10 monthly installments of <span class="nhsuk-u-font-weight-bold">£10.40</span> by direct debit)
-                </li>
-              </ul>
-              <div class="nhsuk-form-group">
-                <fieldset class="nhsuk-fieldset">  
-                  <legend class="nhsuk-u-visually-hidden">How long do you want your prepayment certificate to last?</legend>          
-                  <div class="nhsuk-radios">            
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="3-months" name="example" type="radio" value="yes">
-                      <label class="nhsuk-label nhsuk-radios__label" for="3-months">
-                        3 months
-                      </label>
-                    </div>
-              
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="12-months" name="example" type="radio" value="no">
-                      <label class="nhsuk-label nhsuk-radios__label" for="12-months">
-                        12 months
-                      </label>
-                    </div>
-                  </div>
-                </fieldset>
+      <form action="certificate" method="post">
+        <h1 class="nhsuk-heading-xl">How long do you want your prepayment certificate to last?</h1>
+        <p>You can prepay for prescriptions for 3 or 12 months. A prescription prepayment certificate costs:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li><span class="nhsuk-u-font-weight-bold">£29.10</span> for 3 months</li>
+          <li><span class="nhsuk-u-font-weight-bold">£104</span> for 12 months
+          <br>
+          (or 10 monthly installments of <span class="nhsuk-u-font-weight-bold">£10.40</span> by direct debit)
+          </li>
+        </ul>
+          <div class="nhsuk-form-group">
+            <fieldset class="nhsuk-fieldset">  
+            <legend class="nhsuk-u-visually-hidden">How long do you want your prepayment certificate to last?</legend>          
+            <div class="nhsuk-radios">            
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="three-months" name="months" type="radio" value="three-months">
+                <label class="nhsuk-label nhsuk-radios__label" for="three-months">
+                  3 months
+                </label>
+            </div>
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="twelve-months" name="months" type="radio" value="twelve-months">
+                  <label class="nhsuk-label nhsuk-radios__label" for="twelve-months">
+                    12 months
+                  </label>
               </div>
-              <div class="nhsuk-input--width-4"></div>  
-                <button class="nhsuk-button" type="submit">
-                Next
-              </button>
-        </div>
+            </div>
+          </fieldset>
+          </div>
+          <button class="nhsuk-button" type="submit">
+            Next
+          </button>
+          <p><a href="index">Cancel</a></p>
     </form>
-    <a href="index"><p>Cancel</p></a>
    </div>
 </div>
 {% endblock %}

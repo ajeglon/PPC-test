@@ -11,11 +11,12 @@ What is your address?
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <form action="do-you-know-your-nhs-number" method="post">
-        <div class="nhsuk-form-group">
-            <h1 class="nhsuk-heading-xl">What is your address</h1>
-            <p>The address you give should match what is printed on your prescriptions.</p>
             <fieldset class="nhsuk-fieldset">
-              <legend class="nhsuk-u-visually-hidden">Enter your address</legend>
+              <legend>
+                <h1 class="nhsuk-heading-xl">What is your address</h1>
+                </legend>
+                <p>The address you give should match what is printed on your prescriptions.</p>
+                <p>Enter your address</p>
                 <div class="nhsuk-form-group">
                   <label class="nhsuk-label" for="address-line-1">
                     Building and street <span class="nhsuk-u-visually-hidden">line 1 of 2</span>
@@ -40,15 +41,13 @@ What is your address?
                   </label>
                   <input class="nhsuk-input nhsuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
                 </div>
-                <div class="nhsuk-input--width-4"></div> 
               </fieldset>
             <a href="find-your-address"><p>Find my address for me</p></a>
             <button class="nhsuk-button" type="submit">
                 Next
             </button>
-        </div>
+            <p><a href="index">Cancel</a></p>
     </form>
-    <a href="index"><p>Cancel</p></a>
    </div>
 </div>
 {% endblock %}

@@ -11,26 +11,24 @@ What is your address?
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <form action="select-address" method="post">
-        <div class="nhsuk-form-group">
-            <h1 class="nhsuk-heading-xl">Find your address</h1>
-            <p>The address you give should match what is printed on your prescriptions.</p>
-            <fieldset class="nhsuk-fieldset">
-              <legend class="nhsuk-u-visually-hidden">Enter your address</legend>
+          <fieldset class="nhsuk-fieldset">
+            <legend>
+              <h1 class="nhsuk-heading-xl">Find your address</h1>
+            </legend>
+              <p>The address you give should match what is printed on your prescriptions.</p>
                 <div class="nhsuk-form-group">
                   <label class="nhsuk-label" for="address-postcode">
                     Postcode
                   </label>
                   <input class="nhsuk-input nhsuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
                 </div>
-                <div class="nhsuk-input--width-4"></div> 
               </fieldset>
-              <a href="manual-address"><p>Enter my address manually</p></a>
+              <p><a href="manual-address">Enter my address manually</a></p>
             <button class="nhsuk-button" type="submit">
                 Next
               </button>
-        </div>
+              <p><a href="index">Cancel</a></p>
     </form>
-    <a href="index"><p>Cancel</p></a>
    </div>
 </div>
 {% endblock %}
