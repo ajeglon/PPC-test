@@ -11,95 +11,92 @@ When do you want your prepayment certificate to start?
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <form action="certificate-sent-preference" method="post">
-        <div class="nhsuk-form-group">
+        <fieldset class="nhsuk-fieldset">
+          <legend>
             <h1 class="nhsuk-heading-xl">When do you want your prepayment certificate to start?</h1>
-            <p>You can choose any day to start your prepayment certificate between 17 August 2018 and 17 October 2018.</p>
-            <div class="nhsuk-form-group">
-                <fieldset class="nhsuk-fieldset">
-                  <legend class="nhsuk-u-visually-hidden">When do you want your prepayment certificate to start?</legend>   
-                  <div class="nhsuk-radios nhsuk-radios--conditional">  
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="collect-today-or-later" name="contact" type="radio" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
-                      <label class="nhsuk-label nhsuk-radios__label" for="collect-today-or-later">
-                        To cover prescriptions I'll collect today or later
-                      </label>
-                    </div>
-                    <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-1">
-                        <p>Choose the date you will collect your next prescription to get the most out of your certificate.</p>
-                        <p>If you already have a certificate, choose a date after this expires.</p>
-                        <div class="nhsuk-date-input" id="date">
-                            <div class="nhsuk-date-input__item">
-                              <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="day">
-                                  Day
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="day" name="day" type="number" pattern="[0-9]*">
-                              </div>
-                            </div>
-                            <div class="nhsuk-date-input__item">
-                              <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="month">
-                                  Month
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="month" name="month" type="number" pattern="[0-9]*">
-                              </div>
-                            </div>
-                            <div class="nhsuk-date-input__item">
-                              <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="year">
-                                  Year
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="year" name="year" type="number" pattern="[0-9]*">
-                              </div>
-                            </div>
-                          </div>             
-                    </div>             
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="backdate-certifacte" name="contact" type="radio" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
-                      <label class="nhsuk-label nhsuk-radios__label" for="backdate-certifacte">
-                        I want to backdate my certificate - I have collected my prescription before today
-                      </label>
-                    </div>              
-                    <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-2">
-                        <p>Choose the date you collected your prescription.</p>
-                        <p>You can only claim a refund if you were given a form on the day you collected the prescription.</p>
-                        <div class="nhsuk-date-input" id="date">
-                            <div class="nhsuk-date-input__item">
-                              <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="day">
-                                  Day
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="day" name="day" type="number" pattern="[0-9]*">
-                              </div>
-                            </div>
-                            <div class="nhsuk-date-input__item">
-                              <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="month">
-                                  Month
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="month" name="month" type="number" pattern="[0-9]*">
-                              </div>
-                            </div>
-                            <div class="nhsuk-date-input__item">
-                              <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="year">
-                                  Year
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="year" name="year" type="number" pattern="[0-9]*">
-                              </div>
-                            </div>
-                          </div>             
-                    </div>             
+          </legend>   
+          <p>You can choose any day to start your prepayment certificate between 17 August 2018 and 17 October 2018.</p>
+          <div class="nhsuk-radios nhsuk-radios--conditional">  
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="collect-today-or-later" name="contact" type="radio" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-radios__label" for="collect-today-or-later">
+                  To cover prescriptions I'll collect today or later
+                </label>
+            </div>
+            <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-1">
+              <p>Choose the date you will collect your next prescription to get the most out of your certificate.</p>
+              <p>If you already have a certificate, choose a date after this expires.</p>
+              <div class="nhsuk-date-input" id="date">
+                <div class="nhsuk-date-input__item">
+                 <div class="nhsuk-form-group">
+                    <label class="nhsuk-label nhsuk-date-input__label" for="day">
+                      Day
+                    </label>
+                     <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="day" name="day" type="number" pattern="[0-9]*">
                   </div>
-                </fieldset>             
-              </div>
-            <div class="nhsuk-input--width-4"></div>  
-            <button class="nhsuk-button" type="submit">
-            Next
-          </button>
-    </div>
-</form>
-<a href="index"><p>Cancel</p></a>
-</div>
+                </div>
+                <div class="nhsuk-date-input__item">
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label nhsuk-date-input__label" for="month">
+                      Month
+                    </label>
+                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="month" name="month" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="nhsuk-date-input__item">
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label nhsuk-date-input__label" for="year">
+                      Year
+                    </label>
+                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="year" name="year" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+              </div>             
+            </div>             
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="backdate-certifacte" name="contact" type="radio" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-radios__label" for="backdate-certifacte">
+                I want to backdate my certificate - I have collected my prescription before today
+              </label>
+            </div>              
+            <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-2">
+              <p>Choose the date you collected your prescription.</p>
+              <p>You can only claim a refund if you were given a form on the day you collected the prescription.</p>
+              <div class="nhsuk-date-input" id="date">
+                <div class="nhsuk-date-input__item">
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label nhsuk-date-input__label" for="day">
+                      Day
+                    </label>
+                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="day" name="day" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="nhsuk-date-input__item">
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label nhsuk-date-input__label" for="month">
+                      Month
+                    </label>
+                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="month" name="month" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="nhsuk-date-input__item">
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label nhsuk-date-input__label" for="year">
+                      Year
+                    </label>
+                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="year" name="year" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+              </div>             
+            </div>             
+          </div>
+        </fieldset>             
+      <div class="nhsuk-input--width-4"></div>  
+        <button class="nhsuk-button" type="submit">
+           Next
+        </button>
+        <p><a href="index">Cancel</a></p>
+    </form>
+  </div>
 </div>
 {% endblock %}
